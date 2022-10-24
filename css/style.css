@@ -2,3 +2,192 @@
 /* proj: Carosello Array di Oggetti; */
 /* lang: css; */
 
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* img-formatting */
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition-duration: 1s;
+}
+
+img:hover{
+    transform: scale(.95);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+/* body */
+body{
+    background-color: black;
+}
+
+
+
+/* main-section */
+/* container */
+.container{
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;   
+}
+
+/* row */
+.row{
+    margin: 80px auto 0;
+    width: 80%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* col */
+.col{
+    width: 100%;
+    height: 700px;
+}
+
+
+
+/* up-nav-bar */
+/* card-img */
+.card-img{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 550px;
+}
+
+/* img-text */
+.img-text{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: end ;
+    color: white;
+}
+
+
+
+/* down-nav-bar  */
+.down-nav-bar{
+    position: relative;
+    display: flex;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* img-down-nav-bar */
+.down-nav-bar img{
+    opacity: 0.4;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+
+
+/* arrow-formatting-section */
+/* arrow */
+.arrow{
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .5;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1s;
+}
+
+/* hover */
+.arrow:hover{
+    background-color: grey;
+    color: black;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* arrow-left */
+.arrow-left{
+    top: 50%;
+    left: 10px;
+    transition-duration: 1s;
+}
+
+/* arrow-right */
+.arrow-right{
+    top: 50%;
+    right: 10px;
+}
+
+.img-col{
+    width: calc(100% / 5);
+    background-color: black;
+}
+
+.img-col.active{
+    border: 3px solid rgb(199, 199, 199);
+}
+
+.img-col.active img{
+    opacity: 1;
+}
+
+.img-col:hover img{
+    opacity: 1;
+}
+
+/* active */
+.active{
+    display: flex!important;
+}
+
+
+
+/* button-section-formatting */
+/* button-nav-bar */
+.button-nav-bar{
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+    gap: 20px;
+}
+
+/* btn */
+.btn{
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 30px;
+    transition-duration: 1s;
+}
+
+/* hover */
+.btn:hover{
+   transform: translate(1px, 1px);
+   background-color: white;
+   color: grey;
+   transform: scale(1.1);
+}
