@@ -123,16 +123,15 @@ body{
 }
 
 /* arrow-left */
-.arrow-left{
-    top: 50%;
-    left: 10px;
-    transition-duration: 1s;
+.left{
+    position: absolute;
+    left: 0px;
 }
 
 /* arrow-right */
-.arrow-right{
-    top: 50%;
-    right: 10px;
+.right{
+    position: absolute;
+    right: 0px;
 }
 
 .img-col{

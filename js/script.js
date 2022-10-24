@@ -170,7 +170,7 @@ function autoScroll (element1, element2) {
             clearInterval(interval);
             autoScroll1 = true;
         })
-    }, 1000);
+    }, 3000);
     
     const reverse = document.querySelector(".reverse-btn");
     reverse.addEventListener("click", () => {
